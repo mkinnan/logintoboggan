@@ -1,4 +1,5 @@
 logintoboggan
 =============
 
-The Login Tobaggan module for DrupalGap.
+The LoginToboggan module for DrupalGap.
+
