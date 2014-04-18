@@ -8,7 +8,7 @@ function logintoboggan_form_alter(form, form_state, form_id) {
       // name field.
       if (
         typeof drupalgap.site_settings.logintoboggan_login_with_email !== 'undefined' &&
-        drupalgap.site_settings.logintoboggan_login_with_email
+        drupalgap.site_settings.logintoboggan_login_with_email == "1"
       ) { form.elements['name'].title = 'Username or e-mail'; }
     }
   }
