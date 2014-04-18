@@ -12,6 +12,6 @@ function logintoboggan_form_alter(form, form_state, form_id) {
       ) { form.elements['name'].title = 'Username or e-mail'; }
     }
   }
-  catch (error) { console.log('user_login_form - ' + error); }
+  catch (error) { console.log('logintoboggan_form_alter - ' + error); }
 }
 
