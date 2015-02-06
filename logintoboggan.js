@@ -9,7 +9,10 @@ function logintoboggan_form_alter(form, form_state, form_id) {
       if (
         typeof drupalgap.site_settings.logintoboggan_login_with_email !== 'undefined' &&
         drupalgap.site_settings.logintoboggan_login_with_email == "1"
-      ) { form.elements['name'].title = 'Username or e-mail'; }
+      ) {
+        form.elements['name'].title = 'Username or e-mail';
+        form.elements['name'].type = 'email';
+      }
     }
     else if (form_id == 'user_register_form') {
       // If the confirm e-mail at registration setting is disabled, disable the
